@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg-pri: #fff;
+    --color-nav-txt: #000000;
+    --color-nav-txt-hover: #ffffff;
+    --color-nav-hover: #04AA6D;
+    --color-subnav-bg: #282A35;
+    --color-subnav-txt: #f1f1f1;
+    --color-subnav-hover: #04AA6D;
+    --color-sidebar-bg: #f1f1f1;
+    --color-btn-bg: #04AA6D;
+    --color-btn-txt: #ffffff;
+    --color-btn-hover: #4CAF50;
+    --color-icon: #9763f6;
+    --color-example-bg: #E7E9EB;
+}
+
+@layer components {
+    .navitems {
+        @apply p-4 flex items-center hover:bg-nav-hover hover:text-nav-txt-hover cursor-pointer
+    }
+    .btn {
+        @apply bg-btn-bg hover:bg-btn-hover rounded-lg text-btn-txt
+    }
+}
+
+.subtopnav::-webkit-scrollbar {
+  display: none;
+}
+
+.subtopnav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 12px;
+}
+.topicontent::-webkit-scrollbar {
+  display: none;
+}
