@@ -12,7 +12,7 @@ function App() {
       element: <AppLayout />,
       children: [
         {
-          path: "/w3schools",
+          path: "/",
           element: <Home />,
         },
         {
