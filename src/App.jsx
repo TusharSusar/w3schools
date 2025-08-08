@@ -4,12 +4,14 @@ import SubjectContent from "./pages/SubjectContent";
 import TopicContent from "./pages/TopicContent";
 import Home from "./pages/Home";
 import Intro from "./pages/Intro";
+import Error from "./pages/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/w3schools",
       element: <AppLayout />,
+      errorElement:<Error/>,
       children: [
         {
           path: "/",
