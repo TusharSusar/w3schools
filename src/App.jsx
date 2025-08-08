@@ -8,11 +8,11 @@ import Intro from "./pages/Intro";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/w3schools",
       element: <AppLayout />,
       children: [
         {
-          path: "/",
+          path: "/w3schools",
           element: <Home />,
         },
         {
